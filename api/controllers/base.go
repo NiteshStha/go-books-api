@@ -9,6 +9,7 @@ import (
 	"github.com/NiteshStha/go-books-api/api/models"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
+	"github.com/rs/cors"
 )
 
 // App the main App
@@ -48,6 +49,12 @@ func (a *App) initializeRoutes() {
 
 // Runserver starts the server
 func (a *App) Runserver() {
+	c := cors.New(cors.Options{
+		AllowedOrigins:   []string{"foo.com"},
+		AllowedMethods:   []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodDelete},
+		AllowCredentials: true,
+	})
+	handler := c.Handler(a.Router)
 	log.Printf("\nServer starting on port: 8000")
-	log.Fatal(http.ListenAndServe(":8000", a.Router))
+	log.Fatal(http.ListenAndServe(":8000", handler))
 }
