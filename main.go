@@ -2,9 +2,9 @@ package main
 
 import (
 	"log"
-	"nitesh/go-books-api/api/controllers"
 	"os"
 
+	"github.com/NiteshStha/go-books-api/api/controllers"
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )

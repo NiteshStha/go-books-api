@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
-	"nitesh/go-books-api/api/models"
-	"nitesh/go-books-api/api/responses"
 	"strconv"
 
+	"github.com/NiteshStha/go-books-api/api/models"
+	"github.com/NiteshStha/go-books-api/api/responses"
 	"github.com/gorilla/mux"
 )
 

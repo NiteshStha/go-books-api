@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"nitesh/go-books-api/api/middlewares"
-	"nitesh/go-books-api/api/models"
 
+	"github.com/NiteshStha/go-books-api/api/middlewares"
+	"github.com/NiteshStha/go-books-api/api/models"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 )
