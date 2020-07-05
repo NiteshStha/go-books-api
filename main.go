@@ -15,7 +15,6 @@ func main() {
 	}
 
 	app := controllers.App{}
-	log.Println(os.Getenv("DBPORT"))
 	app.Initialize(
 		os.Getenv("DB_HOST"),
 		os.Getenv("DB_PORT"),
