@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"nitesh/books-api/api/middlewares"
-	"nitesh/books-api/api/models"
+	"nitesh/go-books-api/api/middlewares"
+	"nitesh/go-books-api/api/models"
 
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"

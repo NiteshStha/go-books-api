@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"nitesh/books-api/api/controllers"
+	"nitesh/go-books-api/api/controllers"
 	"os"
 
 	"github.com/joho/godotenv"

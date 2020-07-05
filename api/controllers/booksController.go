@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
-	"nitesh/books-api/api/models"
-	"nitesh/books-api/api/responses"
+	"nitesh/go-books-api/api/models"
+	"nitesh/go-books-api/api/responses"
 	"strconv"
 
 	"github.com/gorilla/mux"
